@@ -1,9 +1,13 @@
+
 import java.util.Scanner;
 
 public class BolumYirmiAlti {
 
 
    public static void main(String[] args) {
+
+       //SORU 1
+       /*
        Scanner tara = new Scanner(System.in);
 
        double kilo = tara.nextDouble();
@@ -27,6 +31,32 @@ public class BolumYirmiAlti {
            System.out.println("2.Dereceden Kilolu");
        }else{
            System.out.println("3.Dereceden Kilolu");
+       }
+
+        */
+        // SORU2 ÇÖZÜM
+       Scanner tara = new Scanner(System.in);
+       int randNumber =(int) (Math.random() * 89)+10;
+       int kullaniciTahmin= tara.nextInt();
+       System.out.println("RANDNUMBER: "+ randNumber);
+       int ikinciSecenek;
+
+       int onlarBas= randNumber/10;
+       int birlerBas= randNumber-(onlarBas*10);
+       ikinciSecenek = (birlerBas*10)+onlarBas;
+       System.out.println("İKİNCİ SECENEK: "+ikinciSecenek);
+
+       int kOnlarBas = kullaniciTahmin /10;
+       int kBirlerBas = kullaniciTahmin - (kOnlarBas*10);
+
+       if (randNumber==kullaniciTahmin){
+           System.out.println("10000TL KAZANDINIZ. NUMARA: "+randNumber );
+       }else if (kullaniciTahmin==ikinciSecenek){
+           System.out.println("Tebrikler 5000TL KAZANMAYI HAK ETTİNİZ. NUMARANIZ: "+kullaniciTahmin +"Ödül NUMARASI: "+randNumber);
+       }else if ((onlarBas==kOnlarBas) || (onlarBas==kBirlerBas) || (birlerBas==kBirlerBas) || (birlerBas==kOnlarBas)){
+           System.out.println("TEBRİKLER 1000TL KAZANMAYI HAK ETTİNİZ. NUMARANIZ: "+kullaniciTahmin +"Ödül NUMARASI: "+randNumber);
+       }else {
+           System.out.println("BİR ÖDÜL KAZANAMADINIZ");
        }
 
 
