@@ -1,18 +1,10 @@
-
 import java.util.Scanner;
-
 public class BolumYirmiAlti {
-
-
    public static void main(String[] args) {
-
        //SORU 1
-
        Scanner tara = new Scanner(System.in);
-
        double kilo = tara.nextDouble();
        double boy = tara.nextDouble();
-
        double kitleIndex = (kilo / ((boy/100)*(boy/100)));
 
        if (kitleIndex<15) {
@@ -37,15 +29,12 @@ public class BolumYirmiAlti {
        int kullaniciTahmin= tara.nextInt();
        System.out.println("RANDNUMBER: "+ randNumber);
        int ikinciSecenek;
-
        int onlarBas= randNumber/10;
        int birlerBas= randNumber-(onlarBas*10);
        ikinciSecenek = (birlerBas*10)+onlarBas;
        System.out.println("İKİNCİ SECENEK: "+ikinciSecenek);
-
        int kOnlarBas = kullaniciTahmin /10;
        int kBirlerBas = kullaniciTahmin - (kOnlarBas*10);
-
        if (randNumber==kullaniciTahmin){
            System.out.println("10000TL KAZANDINIZ. NUMARA: "+randNumber );
        }else if (kullaniciTahmin==ikinciSecenek){
@@ -55,9 +44,5 @@ public class BolumYirmiAlti {
        }else {
            System.out.println("BİR ÖDÜL KAZANAMADINIZ");
        }
-
-
-
-
     }
 }
