@@ -7,7 +7,7 @@ public class BolumYirmiAlti {
    public static void main(String[] args) {
 
        //SORU 1
-       /*
+
        Scanner tara = new Scanner(System.in);
 
        double kilo = tara.nextDouble();
@@ -32,10 +32,7 @@ public class BolumYirmiAlti {
        }else{
            System.out.println("3.Dereceden Kilolu");
        }
-
-        */
         // SORU2 ÇÖZÜM
-       Scanner tara = new Scanner(System.in);
        int randNumber =(int) (Math.random() * 89)+10;
        int kullaniciTahmin= tara.nextInt();
        System.out.println("RANDNUMBER: "+ randNumber);
