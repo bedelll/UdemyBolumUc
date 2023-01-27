@@ -24,6 +24,7 @@ public class BolumYirmiAlti {
        }else{
            System.out.println("3.Dereceden Kilolu");
        }
+
         // SORU2 ÇÖZÜM
        int randNumber =(int) (Math.random() * 89)+10;
        int kullaniciTahmin= tara.nextInt();
